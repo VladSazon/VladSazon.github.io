@@ -16,5 +16,8 @@
 .container{
   align-items:flex-start;
 }
-
+.del{
+position: relative;
+text-decoration: line-through;
+}
 

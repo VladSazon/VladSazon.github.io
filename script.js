@@ -23,7 +23,7 @@ $(function(){
   $('#list').html(localStorage.getItem("todoist"));
 
   $(document).on('click', 'li', function(){
-   $(this).remove();
+   $(this).addClass('del');
   
    localStorage.removeItem("todoist");
  }); 
