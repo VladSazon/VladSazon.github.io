@@ -2,10 +2,10 @@
 .flex{
   display:flex;
   justify-content:center;
-  align-content:flex-start;
   align-items:center;
   height:500px;
-  flex-flow:column nowrap;
+  flex-flow:column wrap;
+  width: 100%;
 }
 .flex-inline{
   display:inline-flex;
@@ -31,7 +31,7 @@
   background:#f6546a;
 }
 .container{
-  align-items:flex-start;
+  align-items:center;
 }
 .del{
 text-decoration: line-through;
@@ -42,9 +42,11 @@ li{
 
 }
 #list{
-	padding-left: 25px;
+	padding-right: 120px;
 }
 #submit{
 	font-size: 23px;
 	font-family: 'Rubik Mono One', sans-serif;
+	border: 1px #9c7b7b solid;
+    width: 219px;
 }
