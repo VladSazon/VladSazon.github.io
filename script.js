@@ -24,7 +24,7 @@ $(function(){
   $('#list').html(localStorage.getItem("todoist"));
 
   $(document).on('click', 'li', function(){
-   $(this).toggleClass('del');
+   $(this).remove();
    localStorage.setItem("todoist", $('#list').html());
    //localStorage.removeItem("todoist");
  }); 
