@@ -22,8 +22,12 @@ var RemoveListItem = function(src)
 
 $(function(){
   $('#list').html(localStorage.getItem("todoist"));
-
-  $(document).on('click', 'li', function(){
+$(document).on('click', 'li', function(){
+   $(this).toggleClass("del");
+   localStorage.setItem("todoist", $('#list').html());
+   
+ }); 
+  $(document).on('dblclick', 'li', function(){
    $(this).remove();
    localStorage.setItem("todoist", $('#list').html());
    

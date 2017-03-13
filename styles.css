@@ -1,9 +1,10 @@
+
 .flex{
   display:flex;
   justify-content:center;
   align-content:flex-start;
   align-items:center;
-  height:200px;
+  height:500px;
   flex-flow:column nowrap;
 }
 .flex-inline{
@@ -11,13 +12,39 @@
   
 }
 #btn{
-  margin-left:10px;
+	width: 70px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 0 15px;
+    background-color: #ffe4e1;
+    margin-left:10px;
+    cursor: pointer;
+}
+#btn:hover{
+  background:#f6546a;
 }
 .container{
   align-items:flex-start;
 }
 .del{
-
 text-decoration: line-through;
 }
+li{
+	font-size: 23px;
+	font-family: 'Rubik Mono One', sans-serif;
 
+}
+#list{
+	padding-left: 25px;
+}
+#submit{
+	font-size: 23px;
+	font-family: 'Rubik Mono One', sans-serif;
+}
