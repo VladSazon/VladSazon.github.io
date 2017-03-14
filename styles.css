@@ -37,15 +37,15 @@
 text-decoration: line-through;
 }
 li{
-	font-size: 18px;
+	font-size: 16px;
 	font-family: 'Rubik Mono One', sans-serif;
 
 }
-#list{
-	padding-left: 10px;
+#list {
+	padding-left: 48px;
 }
 #submit{
-	font-size: 18px;
+	font-size: 16px;
 	font-family: 'Rubik Mono One', sans-serif;
 	border: 1px #9c7b7b solid;
     width: 219px;
