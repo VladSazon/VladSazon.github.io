@@ -3,7 +3,7 @@
   display:flex;
   justify-content:center;
   align-items:center;
-  height:500px;
+  height:625px;
   flex-flow:column wrap;
   width: 100%;
 }
@@ -23,13 +23,11 @@
     justify-content: center;
     text-decoration: none;
     margin: 0 15px;
-    background-color: #ffe4e1;
+    background-color: #f6546a;
     margin-left:10px;
     cursor: pointer;
 }
-#btn:hover{
-  background:#f6546a;
-}
+
 .container{
   align-items:center;
 }
@@ -39,10 +37,17 @@ text-decoration: line-through;
 li{
 	font-size: 16px;
 	font-family: 'Rubik Mono One', sans-serif;
+	padding-bottom: 5px;
+
+}
+h1{
+	font-family: 'Rubik Mono One', sans-serif;
+	text-align: center;
 
 }
 #list {
-	padding-left: 48px;
+	padding-left: 20px;
+	width:290px;
 }
 #submit{
 	font-size: 16px;
