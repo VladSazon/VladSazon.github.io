@@ -23,20 +23,24 @@ var RemoveListItem = function(src)
 $(function(){
   $('#list').html(localStorage.getItem("todoist"));
 $(document).on('click', 'li', function(){
-   $(this).toggleClass("del");
+    $(this).remove();
    localStorage.setItem("todoist", $('#list').html());
    
  }); 
-  $(document).on('dblclick', 'li', function(){
+  /*$(document).on('dblclick', 'li', function(){
    $(this).remove();
    localStorage.setItem("todoist", $('#list').html());
    
- }); 
+ }); */
 });
- 
 })();
-
-
+document.write(VK.Share.button({
+  url: 'https://vladsazon.github.io',
+  title: 'Хороший сайт',
+  description: 'Это мой собственный сайт, я его очень долго делал',
+  image: 'https://images.unsplash.com/reserve/wrev1ljvQ6KlfyljCQG0_lion.jpg',
+  noparse: true
+}));
 
 
 
