@@ -1,7 +1,7 @@
 
 .flex{
   display:flex;
-  justify-content:center;
+  justify-content:flex-start;
   align-items:center;
   height:625px;
   flex-flow:column wrap;
