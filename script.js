@@ -26,13 +26,18 @@ $(document).on('click', 'li', function(){
    localStorage.setItem("todoist", $('#list').html());
    
  }); 
- $(document).on("pagecreate","#pageone",function(){
-  $("li").on("swipe",function(){
-    $(this).remove();
-    localStorage.setItem("todoist", $('#list').html());
-  });                       
+ $(document).on("click", 'li', function() {
+    if ($(this).hasClass("target-dblclick")) {
+        //do something after the dbl click
+        $(this).remove();
+   localStorage.setItem("todoist", $('#list').html());
+        $(this).removeClass("target-dblclick");
+    } else {
+        $(this).addClass("target-dblclick");
+        setTimeout(function() { $(this).removeClass("target-dblclick"); }, 600);
+    }
 });
- /* $('li').on('tap', function(){
+ /*$(document).on('dblclick', 'li', function(){
    $(this).remove();
    localStorage.setItem("todoist", $('#list').html());
    
