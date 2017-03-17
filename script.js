@@ -26,7 +26,7 @@ $(document).on('click', 'li', function(){
    localStorage.setItem("todoist", $('#list').html());
    
  }); 
-  $(document).on('swipe', 'li' function(){
+  $(document).on('swipe','li', function(){
    $(this).remove();
    localStorage.setItem("todoist", $('#list').html());
    
