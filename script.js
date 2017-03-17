@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 $('#btn').on('click', function() {
   $('#btn').on('click', function(event) {
@@ -23,15 +22,15 @@ var RemoveListItem = function(src)
 $(function(){
   $('#list').html(localStorage.getItem("todoist"));
 $(document).on('click', 'li', function(){
-    $(this).remove();
+    $(this).toggleClass('del');
    localStorage.setItem("todoist", $('#list').html());
    
  }); 
-  /*$(document).on('dblclick', 'li', function(){
+  $('li').on('swipe', function(){
    $(this).remove();
    localStorage.setItem("todoist", $('#list').html());
    
- }); */
+ }); 
 });
 })();
 document.write(VK.Share.button({
@@ -41,24 +40,3 @@ document.write(VK.Share.button({
   image: 'https://images.unsplash.com/reserve/wrev1ljvQ6KlfyljCQG0_lion.jpg',
   noparse: true
 }));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
