@@ -26,11 +26,17 @@ $(document).on('click', 'li', function(){
    localStorage.setItem("todoist", $('#list').html());
    
  }); 
-  $(document).on('swipe','li', function(){
+ $(document).on("pagecreate","#pageone",function(){
+  $("li").on("swipe",function(){
+    $(this).remove();
+    localStorage.setItem("todoist", $('#list').html());
+  });                       
+});
+ /* $('li').on('tap', function(){
    $(this).remove();
    localStorage.setItem("todoist", $('#list').html());
    
- }); 
+ }); */
 });
 })();
 document.write(VK.Share.button({
