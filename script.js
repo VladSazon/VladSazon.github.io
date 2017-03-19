@@ -12,7 +12,7 @@ var RemoveListItem = function(src)
 {
  
 };
-  $('#list').prepend('<li>' + entrada + '</li>');
+  $('#list').append('<li>' + entrada + '</li>');
   $('#list li').click(RemoveListItem); 
  localStorage.setItem("todoist", $('#list').html());
   $('#submit').val("");
